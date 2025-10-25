@@ -18,10 +18,10 @@ export default function Hero() {
               <span className="text-emerald-700 font-semibold text-sm">💻 Online & Fleksibel</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-              Belajar <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Bahasa Arab</span> & <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Tahsin Al-Qur'an</span>
+              Belajar <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Bahasa Arab</span> & <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Tahsin Al-Quran</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-              Tingkatkan pemahaman Islam Anda melalui pembelajaran bahasa Arab dan perbaikan bacaan Al-Qur'an dengan bimbingan <span className="font-semibold text-emerald-600">ustadz/ustadzah</span> yang berpengalaman dan berkompeten. <span className="font-bold text-blue-600">Belajar dari rumah, kapan pun, di mana pun!</span>
+              Tingkatkan pemahaman Islam Anda melalui pembelajaran bahasa Arab dan perbaikan bacaan Al-Quran dengan bimbingan <span className="font-semibold text-emerald-600">ustadz/ustadzah</span> yang berpengalaman dan berkompeten. <span className="font-bold text-blue-600">Belajar dari rumah, kapan pun, di mana pun!</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link

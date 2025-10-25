@@ -17,8 +17,8 @@ export default function ProgramsPage() {
     },
     {
       icon: <FaQuran size={60} />,
-      title: 'Tahsin Al-Qur\'an',
-      description: 'Tingkatkan kualitas bacaan Al-Qur\'an Anda dengan bimbingan tahsin yang komprehensif. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Kelas interaktif dengan jumlah santri terbatas.',
+      title: 'Tahsin Al-Quran',
+      description: 'Tingkatkan kualitas bacaan Al-Quran Anda dengan bimbingan tahsin yang komprehensif. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Kelas interaktif dengan jumlah santri terbatas.',
       duration: '2-4 Bulan',
       level: 'Semua Tingkat',
       price: 'Rp 300.000/bulan',

@@ -8,8 +8,8 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Karaya - Lembaga Kursus Bahasa Arab & Tahsin Al-Qur\'an',
-  description: 'Belajar bahasa Arab dan tingkatkan bacaan Al-Qur\'an Anda dengan metode yang mudah dan efektif. Dibimbing oleh ustadz/ustadzah berpengalaman.',
+  title: 'Karaya - Lembaga Kursus Bahasa Arab & Tahsin Al-Quran',
+  description: 'Belajar bahasa Arab dan tingkatkan bacaan Al-Quran Anda dengan metode yang mudah dan efektif. Dibimbing oleh ustadz/ustadzah berpengalaman.',
 }
 
 export default function RootLayout({

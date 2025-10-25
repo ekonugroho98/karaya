@@ -20,8 +20,8 @@ export default function Programs() {
     },
     {
       icon: <FaQuran size={50} />,
-      title: 'Tahsin Al-Qur\'an',
-      description: 'Tingkatkan bacaan Al-Qur\'an Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Belajar mudah dari rumah dengan bimbingan langsung!',
+      title: 'Tahsin Al-Quran',
+      description: 'Tingkatkan bacaan Al-Quran Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Belajar mudah dari rumah dengan bimbingan langsung!',
       duration: '2-4 Bulan',
       level: 'Semua Tingkat',
       price: 'Rp 300.000/bulan',

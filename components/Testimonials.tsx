@@ -14,7 +14,7 @@ export default function Testimonials() {
       role: 'Santri Tahsin',
       image: '👩‍🎓',
       rating: 5,
-      text: 'Subhanallah, bacaan Al-Qur\'an saya jadi lebih baik. Ustadzah sangat sabar dan detail dalam mengajarkan makhorijul huruf dan tajwid.',
+      text: 'Subhanallah, bacaan Al-Quran saya jadi lebih baik. Ustadzah sangat sabar dan detail dalam mengajarkan makhorijul huruf dan tajwid.',
     },
     {
       name: 'Ahmad Fauzan',
