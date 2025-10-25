@@ -148,7 +148,7 @@ export default function Navbar() {
                   <h3 className="font-bold text-gray-900 mb-2 text-sm">Butuh Bantuan?</h3>
                   <p className="text-xs text-gray-600 mb-3">Tim kami siap membantu Anda</p>
                   <a 
-                    href="https://wa.me/6281234567890" 
+                    href="https://wa.me/6285761123043" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 w-full py-2 bg-green-500 text-white rounded-lg text-sm font-semibold hover:bg-green-600 transition-colors duration-300"

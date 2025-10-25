@@ -3,7 +3,7 @@
 import { FaWhatsapp } from 'react-icons/fa'
 
 export default function WhatsAppButton() {
-  const phoneNumber = '6281234567890' // Ganti dengan nomor WhatsApp Anda
+  const phoneNumber = '6285761123043' // Ganti dengan nomor WhatsApp Anda
   const message = 'Assalamualaikum, saya ingin bertanya tentang program kursus di Karaya'
   
   const handleClick = () => {

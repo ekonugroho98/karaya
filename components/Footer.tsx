@@ -30,7 +30,7 @@ export default function Footer() {
                 <FaYoutube size={24} />
               </a>
               <a 
-                href="https://wa.me/6281234567890?text=Halo%20Karaya%20Academy!%20Saya%20ingin%20bertanya%20tentang%20program%20pembelajaran." 
+                href="https://wa.me/6285761123043?text=Halo%20Karaya%20Academy!%20Saya%20ingin%20bertanya%20tentang%20program%20pembelajaran." 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-green-400 transition"
@@ -74,13 +74,13 @@ export default function Footer() {
               <li>Email: info@karaya.academy</li>
               <li>
                 <a 
-                  href="https://wa.me/6281234567890" 
+                  href="https://wa.me/6285761123043" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition flex items-center"
                 >
                   <FaWhatsapp className="mr-2" />
-                  WhatsApp: +62 812-3456-7890
+                  WhatsApp: +62 857-6112-3043
                 </a>
               </li>
               <li>Alamat: Jakarta, Indonesia</li>

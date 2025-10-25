@@ -15,7 +15,7 @@ Website Karaya Academy sekarang memiliki 3 integrasi WhatsApp:
 Edit file: `components/WhatsAppButton.tsx`
 
 ```typescript
-const phoneNumber = '6281234567890' // Ganti dengan nomor Anda
+const phoneNumber = '6285761123043' // Ganti dengan nomor Anda
 const message = 'Halo Karaya Academy! Saya ingin bertanya tentang program pembelajaran.'
 ```
 
@@ -26,20 +26,20 @@ Edit file: `components/Footer.tsx`
 Cari dan ganti semua link WhatsApp:
 
 ```typescript
-href="https://wa.me/6281234567890?text=..."
+href="https://wa.me/6285761123043?text=..."
 ```
 
 ## 📝 Format Nomor WhatsApp
 
 **Format yang Benar:**
-- `6281234567890` (Indonesia: 62 + nomor tanpa 0 di depan)
+- `6285761123043` (Indonesia: 62 + nomor tanpa 0 di depan)
 - `601234567890` (Malaysia: 60 + nomor)
 - `6591234567` (Singapore: 65 + nomor)
 
 **JANGAN gunakan:**
-- ❌ `+6281234567890` (dengan tanda +)
-- ❌ `0812-3456-7890` (dengan tanda hubung)
-- ❌ `0812 3456 7890` (dengan spasi)
+- ❌ `+6285761123043` (dengan tanda +)
+- ❌ `0857-6112-3043` (dengan tanda hubung)
+- ❌ `0857 6112 3043` (dengan spasi)
 
 ## 🎨 Kustomisasi Pesan
 

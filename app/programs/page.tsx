@@ -180,7 +180,7 @@ export default function ProgramsPage() {
               <span>Konsultasi Gratis</span>
             </Link>
             <a
-              href="https://wa.me/6281234567890?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20program%20kursus%20di%20Karaya"
+              href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20bertanya%20tentang%20program%20kursus%20di%20Karaya"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl text-lg font-bold hover:shadow-lg transition-all duration-300 border-2 border-emerald-200 transform hover:scale-105"

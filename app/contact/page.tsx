@@ -81,7 +81,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Telepon</h3>
                     <p className="text-gray-600">
-                      +62 812-3456-7890<br />
+                      +62 857-6112-3043<br />
                       +62 21-1234-5678
                     </p>
                   </div>
@@ -172,7 +172,7 @@ export default function ContactPage() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder="+62 812-3456-7890"
+                    placeholder="+62 857-6112-3043"
                   />
                 </div>
 
