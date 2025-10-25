@@ -12,14 +12,16 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px]">
           {/* Left Content */}
           <div className="text-center lg:text-left animate-slide-up">
-            <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
+            <div className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-emerald-100 rounded-full">
               <span className="text-emerald-700 font-semibold text-sm">🕌 Pembelajaran Islam Berkualitas</span>
+              <span className="text-emerald-400">•</span>
+              <span className="text-emerald-700 font-semibold text-sm">💻 Online & Fleksibel</span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
               Belajar <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Bahasa Arab</span> & <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Tahsin Al-Qur'an</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-              Tingkatkan pemahaman Islam Anda melalui pembelajaran bahasa Arab dan perbaikan bacaan Al-Qur'an dengan bimbingan <span className="font-semibold text-emerald-600">ustadz/ustadzah</span> yang berpengalaman dan berkompeten.
+              Tingkatkan pemahaman Islam Anda melalui pembelajaran bahasa Arab dan perbaikan bacaan Al-Qur'an dengan bimbingan <span className="font-semibold text-emerald-600">ustadz/ustadzah</span> yang berpengalaman dan berkompeten. <span className="font-bold text-blue-600">Belajar mudah dari rumah atau mana saja!</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
@@ -38,15 +40,19 @@ export default function Hero() {
             </div>
             
             {/* Trust Badges */}
-            <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-gray-600">
-              <div className="flex items-center gap-2">
+            <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-600">
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
                 <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
                 <span className="font-semibold">4.9/5.0</span>
               </div>
-              <div className="h-4 w-px bg-gray-300"></div>
-              <div>✓ Ustadz Berkualitas</div>
-              <div className="h-4 w-px bg-gray-300"></div>
-              <div>✓ Metode Mudah</div>
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+                <span className="text-emerald-600">✓</span>
+                <span>Ustadz Berkualitas</span>
+              </div>
+              <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full shadow-md">
+                <span className="text-blue-600">🏠</span>
+                <span className="font-semibold text-blue-700">Belajar dari Rumah</span>
+              </div>
             </div>
           </div>
 

@@ -6,11 +6,12 @@ export default function Programs() {
     {
       icon: <FaBookOpen size={50} />,
       title: 'Les Bahasa Arab',
-      description: 'Pelajari bahasa Arab dari dasar hingga mahir. Fokus pada nahwu, sharaf, dan percakapan sehari-hari dengan metode yang mudah dipahami.',
+      description: 'Pelajari bahasa Arab dari dasar hingga mahir. Fokus pada nahwu, sharaf, dan percakapan sehari-hari dengan metode yang mudah dipahami. Kelas online yang bisa diakses dari mana saja!',
       duration: '3-6 Bulan',
       level: 'Pemula - Menengah',
       price: 'Rp 350.000/bulan',
       schedule: '2x Seminggu',
+      mode: '💻 Online / 🏠 Hybrid',
       gradient: 'from-emerald-500 via-teal-500 to-green-600',
       bgGradient: 'from-emerald-50 to-teal-50',
       iconBg: 'bg-gradient-to-br from-emerald-500 to-teal-500',
@@ -20,11 +21,12 @@ export default function Programs() {
     {
       icon: <FaQuran size={50} />,
       title: 'Tahsin Al-Qur\'an',
-      description: 'Tingkatkan bacaan Al-Qur\'an Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah.',
+      description: 'Tingkatkan bacaan Al-Qur\'an Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Belajar mudah dari rumah dengan bimbingan langsung!',
       duration: '2-4 Bulan',
       level: 'Semua Tingkat',
       price: 'Rp 300.000/bulan',
       schedule: '2x Seminggu',
+      mode: '💻 Online / 🏠 Hybrid',
       gradient: 'from-blue-500 via-indigo-500 to-purple-600',
       bgGradient: 'from-blue-50 to-indigo-50',
       iconBg: 'bg-gradient-to-br from-blue-500 to-purple-500',
@@ -100,6 +102,10 @@ export default function Programs() {
                   <div className="flex items-center justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
                     <span className="text-gray-600 text-sm font-medium">⏱️ Durasi:</span>
                     <span className="font-bold text-gray-900 text-sm">{program.duration}</span>
+                  </div>
+                  <div className="flex items-center justify-between p-3 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+                    <span className="text-gray-600 text-sm font-medium">💻 Mode:</span>
+                    <span className="font-bold text-blue-700 text-sm">{program.mode}</span>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
                     <span className="text-gray-600 text-sm font-medium">📅 Jadwal:</span>

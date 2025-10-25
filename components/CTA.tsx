@@ -31,6 +31,9 @@ export default function CTA() {
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
             Bergabunglah dengan <span className="font-bold">200+</span> santri yang telah belajar bersama kami. 
+            <br />
+            <span className="font-bold text-2xl">Belajar mudah dari rumah atau di mana saja!</span>
+            <br />
             Daftar sekarang dan dapatkan <span className="font-bold">konsultasi gratis</span> untuk memilih program yang tepat!
           </p>
           
@@ -58,16 +61,16 @@ export default function CTA() {
           {/* Trust indicators */}
           <div className="flex flex-wrap items-center justify-center gap-8 text-white/80 text-sm">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
-              <span>Biaya Terjangkau</span>
+              <span className="text-2xl">🏠</span>
+              <span>Belajar dari Rumah</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">💻</span>
+              <span>Kelas Online</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">✓</span>
-              <span>Ustadz Bersertifikat</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">✓</span>
-              <span>Konsultasi Gratis</span>
+              <span>Jadwal Fleksibel</span>
             </div>
           </div>
         </div>

@@ -1,7 +1,14 @@
-import { FaBookOpen, FaUserGraduate, FaUsers, FaAward } from 'react-icons/fa'
+import { FaBookOpen, FaUserGraduate, FaUsers, FaAward, FaHome, FaClock } from 'react-icons/fa'
 
 export default function Features() {
   const features = [
+    {
+      icon: <FaHome size={40} />,
+      title: 'Belajar dari Mana Saja',
+      description: 'Akses kelas online dari rumah, kantor, atau di mana pun Anda berada. Fleksibel dan mudah!',
+      color: 'from-blue-500 to-cyan-500',
+      bgColor: 'bg-blue-50',
+    },
     {
       icon: <FaUserGraduate size={40} />,
       title: 'Ustadz Berkompeten',
@@ -10,11 +17,18 @@ export default function Features() {
       bgColor: 'bg-emerald-50',
     },
     {
+      icon: <FaClock size={40} />,
+      title: 'Jadwal Fleksibel',
+      description: 'Pilih waktu belajar yang sesuai dengan kesibukan Anda. Kelas pagi, siang, atau malam tersedia.',
+      color: 'from-purple-500 to-pink-500',
+      bgColor: 'bg-purple-50',
+    },
+    {
       icon: <FaBookOpen size={40} />,
       title: 'Metode Efektif',
       description: 'Metode pembelajaran yang mudah dipahami, terstruktur, dan terbukti efektif untuk semua tingkat kemampuan.',
-      color: 'from-blue-500 to-indigo-500',
-      bgColor: 'bg-blue-50',
+      color: 'from-indigo-500 to-blue-500',
+      bgColor: 'bg-indigo-50',
     },
     {
       icon: <FaUsers size={40} />,
@@ -27,8 +41,8 @@ export default function Features() {
       icon: <FaAward size={40} />,
       title: 'Sertifikat Resmi',
       description: 'Dapatkan sertifikat resmi setelah menyelesaikan program sebagai bukti penguasaan ilmu yang telah dipelajari.',
-      color: 'from-indigo-500 to-purple-500',
-      bgColor: 'bg-indigo-50',
+      color: 'from-orange-500 to-red-500',
+      bgColor: 'bg-orange-50',
     },
   ]
 
@@ -47,7 +61,7 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
