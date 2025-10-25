@@ -21,7 +21,7 @@ export default function Hero() {
               Belajar <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Bahasa Arab</span> & <span className="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Tahsin Al-Qur'an</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-              Tingkatkan pemahaman Islam Anda melalui pembelajaran bahasa Arab dan perbaikan bacaan Al-Qur'an dengan bimbingan <span className="font-semibold text-emerald-600">ustadz/ustadzah</span> yang berpengalaman dan berkompeten. <span className="font-bold text-blue-600">Belajar mudah dari rumah atau mana saja!</span>
+              Tingkatkan pemahaman Islam Anda melalui pembelajaran bahasa Arab dan perbaikan bacaan Al-Qur'an dengan bimbingan <span className="font-semibold text-emerald-600">ustadz/ustadzah</span> yang berpengalaman dan berkompeten. <span className="font-bold text-blue-600">Belajar dari rumah, kapan pun, di mana pun!</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link
@@ -42,47 +42,47 @@ export default function Hero() {
             {/* Trust Badges */}
             <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-sm text-gray-600">
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-yellow-500">⭐⭐⭐⭐⭐</span>
-                <span className="font-semibold">4.9/5.0</span>
+                <span className="text-emerald-600">✓</span>
+                <span className="font-semibold">Ustadz Bersertifikat</span>
               </div>
               <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
-                <span className="text-emerald-600">✓</span>
-                <span>Ustadz Berkualitas</span>
+                <span className="text-teal-600">📚</span>
+                <span>Kurikulum Terstruktur</span>
               </div>
               <div className="flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full shadow-md">
-                <span className="text-blue-600">🏠</span>
-                <span className="font-semibold text-blue-700">Belajar dari Rumah</span>
+                <span className="text-blue-600">💻</span>
+                <span className="font-semibold text-blue-700">100% Online</span>
               </div>
             </div>
           </div>
 
           {/* Right Content - Modern Stats Cards */}
           <div className="grid grid-cols-2 gap-6 animate-slide-up" style={{animationDelay: '0.2s'}}>
-            <div className="group relative bg-gradient-to-br from-white to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border border-emerald-100">
-              <div className="absolute top-4 right-4 text-4xl opacity-20">📖</div>
-              <div className="text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">200+</div>
-              <div className="text-gray-700 font-medium">Santri Aktif</div>
-              <div className="mt-2 text-xs text-emerald-600 font-semibold">↑ Terus Bertambah</div>
+            <div className="group relative bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border border-blue-100">
+              <div className="absolute top-4 right-4 text-4xl opacity-20">💻</div>
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">100%</div>
+              <div className="text-gray-700 font-medium">Online</div>
+              <div className="mt-2 text-xs text-blue-600 font-semibold">✓ Belajar di Mana Saja</div>
             </div>
             
-            <div className="group relative bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border border-blue-100">
+            <div className="group relative bg-gradient-to-br from-white to-emerald-50 p-8 rounded-2xl shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border border-emerald-100">
               <div className="absolute top-4 right-4 text-4xl opacity-20">🕌</div>
-              <div className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">2</div>
-              <div className="text-gray-700 font-medium">Program Unggulan</div>
-              <div className="mt-2 text-xs text-blue-600 font-semibold">✓ Berkualitas</div>
+              <div className="text-5xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent mb-2">2</div>
+              <div className="text-gray-700 font-medium">Program</div>
+              <div className="mt-2 text-xs text-emerald-600 font-semibold">✓ Arab & Tahsin</div>
             </div>
             
             <div className="group relative bg-gradient-to-br from-white to-teal-50 p-8 rounded-2xl shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border border-teal-100">
-              <div className="absolute top-4 right-4 text-4xl opacity-20">⭐</div>
-              <div className="text-5xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">100%</div>
-              <div className="text-gray-700 font-medium">Metode Efektif</div>
-              <div className="mt-2 text-xs text-teal-600 font-semibold">✓ Terbukti</div>
+              <div className="absolute top-4 right-4 text-4xl opacity-20">📚</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-teal-600 to-emerald-600 bg-clip-text text-transparent mb-2">Kurikulum</div>
+              <div className="text-gray-700 font-medium">Lengkap</div>
+              <div className="mt-2 text-xs text-teal-600 font-semibold">✓ Terstruktur & Mudah</div>
             </div>
             
             <div className="group relative bg-gradient-to-br from-white to-indigo-50 p-8 rounded-2xl shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border border-indigo-100">
-              <div className="absolute top-4 right-4 text-4xl opacity-20">👨‍🏫</div>
-              <div className="text-5xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">10+</div>
-              <div className="text-gray-700 font-medium">Ustadz Expert</div>
+              <div className="absolute top-4 right-4 text-4xl opacity-20">🎓</div>
+              <div className="text-3xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-2">Ustadz</div>
+              <div className="text-gray-700 font-medium">Expert</div>
               <div className="mt-2 text-xs text-indigo-600 font-semibold">✓ Bersertifikat</div>
             </div>
           </div>
