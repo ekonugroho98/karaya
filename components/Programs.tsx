@@ -9,7 +9,9 @@ export default function Programs() {
       description: 'Pelajari bahasa Arab dari dasar hingga mahir. Fokus pada nahwu, sharaf, dan percakapan sehari-hari dengan metode yang mudah dipahami. Kelas online yang bisa diakses dari mana saja!',
       duration: '3-6 Bulan',
       level: 'Pemula - Menengah',
-      price: 'Rp 350.000/bulan',
+      originalPrice: 'Rp 500.000',
+      price: 'Rp 350.000',
+      discount: '30%',
       schedule: '2x Seminggu',
       mode: '💻 Online',
       gradient: 'from-emerald-500 via-teal-500 to-green-600',
@@ -24,7 +26,9 @@ export default function Programs() {
       description: 'Tingkatkan bacaan Al-Quran Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Belajar mudah dari rumah dengan bimbingan langsung!',
       duration: '2-4 Bulan',
       level: 'Semua Tingkat',
-      price: 'Rp 300.000/bulan',
+      originalPrice: 'Rp 430.000',
+      price: 'Rp 300.000',
+      discount: '30%',
       schedule: '2x Seminggu',
       mode: '💻 Online',
       gradient: 'from-blue-500 via-indigo-500 to-purple-600',
@@ -65,9 +69,13 @@ export default function Programs() {
               <div className={`absolute inset-0 bg-gradient-to-br ${program.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500`}></div>
               
               {/* Badge */}
-              <div className="absolute top-4 right-4 z-10">
+              <div className="absolute top-4 right-4 z-10 flex flex-col gap-2">
                 <span className="inline-block px-3 py-1 bg-white/90 backdrop-blur-sm rounded-full text-xs font-bold shadow-lg">
                   {program.badge}
+                </span>
+                {/* Discount Badge */}
+                <span className="inline-block px-3 py-1.5 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-full text-xs font-bold shadow-lg animate-pulse">
+                  🔥 Diskon {program.discount}
                 </span>
               </div>
               
@@ -115,11 +123,22 @@ export default function Programs() {
                     <span className="text-gray-600 text-sm font-medium">📊 Level:</span>
                     <span className="font-bold text-gray-900 text-sm">{program.level}</span>
                   </div>
-                  <div className="flex items-center justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
-                    <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
-                    <span className={`font-bold bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent text-sm`}>
-                      {program.price}
-                    </span>
+                  {/* Price with Discount */}
+                  <div className="p-4 bg-gradient-to-br from-red-50 via-pink-50 to-orange-50 rounded-xl border-2 border-red-200">
+                    <div className="flex items-center justify-between mb-1">
+                      <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
+                      <div className="flex flex-col items-end">
+                        <span className="text-xs text-gray-400 line-through">{program.originalPrice}</span>
+                        <span className={`font-bold text-lg bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent`}>
+                          {program.price}<span className="text-sm">/bulan</span>
+                        </span>
+                      </div>
+                    </div>
+                    <div className="mt-2 text-center">
+                      <span className="inline-block px-2 py-1 bg-red-500 text-white text-xs font-bold rounded">
+                        HEMAT {program.discount} 🎉
+                      </span>
+                    </div>
                   </div>
                 </div>
 

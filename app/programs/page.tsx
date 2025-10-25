@@ -9,7 +9,9 @@ export default function ProgramsPage() {
       description: 'Pelajari bahasa Arab dari dasar hingga mahir dengan metode yang mudah dipahami. Fokus pada nahwu, sharaf, dan percakapan sehari-hari. Belajar mudah dari rumah dengan bimbingan langsung ustadz berpengalaman.',
       duration: '3-6 Bulan',
       level: 'Pemula - Menengah',
-      price: 'Rp 350.000/bulan',
+      originalPrice: 'Rp 500.000',
+      price: 'Rp 350.000',
+      discount: '30%',
       schedule: '2x Seminggu',
       mode: '💻 Online',
       gradient: 'from-emerald-500 to-teal-600',
@@ -21,7 +23,9 @@ export default function ProgramsPage() {
       description: 'Tingkatkan kualitas bacaan Al-Quran Anda dengan bimbingan tahsin yang komprehensif. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Kelas interaktif dengan jumlah santri terbatas.',
       duration: '2-4 Bulan',
       level: 'Semua Tingkat',
-      price: 'Rp 300.000/bulan',
+      originalPrice: 'Rp 430.000',
+      price: 'Rp 300.000',
+      discount: '30%',
       schedule: '2x Seminggu',
       mode: '💻 Online',
       gradient: 'from-blue-500 to-indigo-600',
@@ -72,8 +76,15 @@ export default function ProgramsPage() {
             {programs.map((program, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-glow-lg transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
+                className="group relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-glow-lg transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
               >
+                {/* Discount Badge */}
+                <div className="absolute top-4 right-4 z-10">
+                  <span className="inline-block px-3 py-1.5 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-full text-xs font-bold shadow-lg animate-pulse">
+                    🔥 Diskon {program.discount}
+                  </span>
+                </div>
+
                 <div className="p-8">
                   {/* Icon with gradient background */}
                   <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${program.gradient} text-white mb-6 shadow-xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
@@ -103,11 +114,22 @@ export default function ProgramsPage() {
                       <span className="text-gray-600 text-sm font-medium">📊 Level:</span>
                       <span className="font-bold text-gray-900 text-sm">{program.level}</span>
                     </div>
-                    <div className="flex justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
-                      <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
-                      <span className={`font-bold bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent text-sm`}>
-                        {program.price}
-                      </span>
+                    {/* Price with Discount */}
+                    <div className="p-4 bg-gradient-to-br from-red-50 via-pink-50 to-orange-50 rounded-xl border-2 border-red-200">
+                      <div className="flex items-center justify-between mb-1">
+                        <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
+                        <div className="flex flex-col items-end">
+                          <span className="text-xs text-gray-400 line-through">{program.originalPrice}</span>
+                          <span className={`font-bold text-lg bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent`}>
+                            {program.price}<span className="text-sm">/bulan</span>
+                          </span>
+                        </div>
+                      </div>
+                      <div className="mt-2 text-center">
+                        <span className="inline-block px-2 py-1 bg-red-500 text-white text-xs font-bold rounded">
+                          HEMAT {program.discount} 🎉
+                        </span>
+                      </div>
                     </div>
                   </div>
 
