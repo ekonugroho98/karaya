@@ -1,135 +1,124 @@
 import Link from 'next/link'
-import { FaCode, FaBriefcase, FaPalette, FaDatabase, FaMobileAlt, FaCloud, FaShieldAlt, FaRobot } from 'react-icons/fa'
+import { FaBookOpen, FaQuran } from 'react-icons/fa'
 
 export default function ProgramsPage() {
   const programs = [
     {
-      icon: <FaCode size={48} />,
-      title: 'Web Development',
-      description: 'Pelajari HTML, CSS, JavaScript, React, Next.js, Node.js, dan teknologi web modern lainnya. Program ini mencakup fundamental hingga advanced concepts.',
-      duration: '6 Bulan',
-      level: 'Beginner - Advanced',
-      price: 'Rp 2.500.000',
-      modules: ['HTML & CSS', 'JavaScript ES6+', 'React & Next.js', 'Node.js & Express', 'Database & API'],
+      icon: <FaBookOpen size={60} />,
+      title: 'Les Bahasa Arab',
+      description: 'Pelajari bahasa Arab dari dasar hingga mahir dengan metode yang mudah dipahami. Fokus pada nahwu, sharaf, dan percakapan sehari-hari. Belajar mudah dari rumah dengan bimbingan langsung ustadz berpengalaman.',
+      duration: '3-6 Bulan',
+      level: 'Pemula - Menengah',
+      price: 'Rp 350.000/bulan',
+      schedule: '2x Seminggu',
+      mode: '💻 Online / 🏠 Hybrid',
+      gradient: 'from-emerald-500 to-teal-600',
+      modules: ['Nahwu (Tata Bahasa)', 'Sharaf (Morfologi)', 'Percakapan Sehari-hari', 'Membaca Teks Arab', 'Kosakata Harian', 'Menulis Arab'],
     },
     {
-      icon: <FaDatabase size={48} />,
-      title: 'Data Science',
-      description: 'Kuasai Python, Machine Learning, Deep Learning, dan analisis data untuk karir di bidang data. Termasuk projek real-world.',
-      duration: '8 Bulan',
-      level: 'Intermediate - Advanced',
-      price: 'Rp 3.000.000',
-      modules: ['Python Programming', 'Statistics & Math', 'Machine Learning', 'Deep Learning', 'Big Data'],
-    },
-    {
-      icon: <FaPalette size={48} />,
-      title: 'UI/UX Design',
-      description: 'Belajar desain user interface dan user experience yang menarik dan fungsional menggunakan Figma, Adobe XD, dan tools modern.',
-      duration: '4 Bulan',
-      level: 'Beginner - Intermediate',
-      price: 'Rp 2.000.000',
-      modules: ['Design Principles', 'Figma & Adobe XD', 'User Research', 'Prototyping', 'Design System'],
-    },
-    {
-      icon: <FaBriefcase size={48} />,
-      title: 'Digital Marketing',
-      description: 'Pelajari strategi pemasaran digital, SEO, social media marketing, content marketing, dan Google Analytics.',
-      duration: '5 Bulan',
-      level: 'Beginner - Advanced',
-      price: 'Rp 2.200.000',
-      modules: ['SEO & SEM', 'Social Media Marketing', 'Content Strategy', 'Google Analytics', 'Email Marketing'],
-    },
-    {
-      icon: <FaMobileAlt size={48} />,
-      title: 'Mobile Development',
-      description: 'Buat aplikasi mobile native dan cross-platform menggunakan React Native, Flutter, dan teknologi mobile terkini.',
-      duration: '6 Bulan',
-      level: 'Intermediate - Advanced',
-      price: 'Rp 2.800.000',
-      modules: ['React Native', 'Flutter & Dart', 'Mobile UI/UX', 'API Integration', 'App Deployment'],
-    },
-    {
-      icon: <FaCloud size={48} />,
-      title: 'Cloud Computing',
-      description: 'Pelajari AWS, Google Cloud, Azure, Docker, Kubernetes, dan infrastruktur cloud modern untuk DevOps dan Cloud Engineering.',
-      duration: '5 Bulan',
-      level: 'Intermediate - Advanced',
-      price: 'Rp 2.600.000',
-      modules: ['AWS Basics', 'Docker & Kubernetes', 'CI/CD Pipeline', 'Cloud Architecture', 'Monitoring'],
-    },
-    {
-      icon: <FaShieldAlt size={48} />,
-      title: 'Cyber Security',
-      description: 'Kuasai keamanan siber, ethical hacking, penetration testing, dan defensive security untuk melindungi sistem.',
-      duration: '7 Bulan',
-      level: 'Intermediate - Advanced',
-      price: 'Rp 3.200.000',
-      modules: ['Network Security', 'Ethical Hacking', 'Penetration Testing', 'Security Tools', 'Incident Response'],
-    },
-    {
-      icon: <FaRobot size={48} />,
-      title: 'Artificial Intelligence',
-      description: 'Pelajari AI, Machine Learning, Natural Language Processing, Computer Vision, dan implementasi AI dalam berbagai industri.',
-      duration: '8 Bulan',
-      level: 'Advanced',
-      price: 'Rp 3.500.000',
-      modules: ['AI Fundamentals', 'NLP', 'Computer Vision', 'Neural Networks', 'AI Ethics'],
+      icon: <FaQuran size={60} />,
+      title: 'Tahsin Al-Qur\'an',
+      description: 'Tingkatkan kualitas bacaan Al-Qur\'an Anda dengan bimbingan tahsin yang komprehensif. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Kelas interaktif dengan jumlah santri terbatas.',
+      duration: '2-4 Bulan',
+      level: 'Semua Tingkat',
+      price: 'Rp 300.000/bulan',
+      schedule: '2x Seminggu',
+      mode: '💻 Online / 🏠 Hybrid',
+      gradient: 'from-blue-500 to-indigo-600',
+      modules: ['Makhorijul Huruf', 'Ahkamul Huruf', 'Tajwid Lengkap', 'Tartil & Mujawwad', 'Gharib & Musykilat', 'Adab Tilawah'],
     },
   ]
 
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-50 to-white py-16">
+      <section className="bg-gradient-to-br from-emerald-50 via-white to-blue-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
+            <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
+              <span className="text-emerald-700 font-semibold text-sm">🕌 Program Pembelajaran Islam</span>
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Program Pembelajaran Kami
+              Program <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Pembelajaran</span> Kami
             </h1>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Pilih program yang sesuai dengan tujuan karir Anda. Setiap program dirancang oleh para ahli 
-              industri dan dilengkapi dengan projek praktis untuk membangun portofolio Anda.
+              Pilih program yang sesuai dengan kebutuhan pembelajaran Islam Anda. Setiap program dibimbing oleh 
+              ustadz/ustadzah berpengalaman dengan metode yang mudah dipahami. <span className="font-bold text-blue-600">Belajar dari rumah atau mana saja!</span>
             </p>
+            
+            {/* Trust Badges */}
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-sm">
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+                <span className="text-emerald-600">✓</span>
+                <span>Ustadz Berkompeten</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+                <span className="text-blue-600">💻</span>
+                <span>Kelas Online</span>
+              </div>
+              <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-md">
+                <span className="text-purple-600">🏠</span>
+                <span>Fleksibel</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Programs Grid */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {programs.map((program, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+                className="group bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-glow-lg transition-all duration-500 transform hover:-translate-y-2 border border-gray-100"
               >
                 <div className="p-8">
-                  <div className="text-primary-600 mb-4">{program.icon}</div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">{program.title}</h3>
-                  <p className="text-gray-600 mb-6">{program.description}</p>
+                  {/* Icon with gradient background */}
+                  <div className={`inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-gradient-to-br ${program.gradient} text-white mb-6 shadow-xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                    {program.icon}
+                  </div>
                   
-                  <div className="space-y-2 mb-6">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Durasi:</span>
-                      <span className="font-semibold text-gray-700">{program.duration}</span>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors duration-300">
+                    {program.title}
+                  </h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">{program.description}</p>
+                  
+                  {/* Info Cards */}
+                  <div className="space-y-3 mb-6">
+                    <div className="flex justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+                      <span className="text-gray-600 text-sm font-medium">⏱️ Durasi:</span>
+                      <span className="font-bold text-gray-900 text-sm">{program.duration}</span>
                     </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Level:</span>
-                      <span className="font-semibold text-gray-700">{program.level}</span>
+                    <div className="flex justify-between p-3 bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+                      <span className="text-gray-600 text-sm font-medium">💻 Mode:</span>
+                      <span className="font-bold text-blue-700 text-sm">{program.mode}</span>
                     </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-500">Harga:</span>
-                      <span className="font-semibold text-primary-600">{program.price}</span>
+                    <div className="flex justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+                      <span className="text-gray-600 text-sm font-medium">📅 Jadwal:</span>
+                      <span className="font-bold text-gray-900 text-sm">{program.schedule}</span>
+                    </div>
+                    <div className="flex justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+                      <span className="text-gray-600 text-sm font-medium">📊 Level:</span>
+                      <span className="font-bold text-gray-900 text-sm">{program.level}</span>
+                    </div>
+                    <div className="flex justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
+                      <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
+                      <span className={`font-bold bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent text-sm`}>
+                        {program.price}
+                      </span>
                     </div>
                   </div>
 
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-2">Modul Pembelajaran:</h4>
-                    <ul className="space-y-1">
+                  {/* Modules */}
+                  <div className="mb-6 p-4 bg-gray-50 rounded-xl border border-gray-100">
+                    <h4 className="font-semibold text-gray-900 mb-3 text-sm">Materi Pembelajaran:</h4>
+                    <ul className="grid grid-cols-2 gap-2">
                       {program.modules.map((module, idx) => (
-                        <li key={idx} className="text-sm text-gray-600 flex items-center">
-                          <span className="text-primary-600 mr-2">✓</span>
-                          {module}
+                        <li key={idx} className="text-xs text-gray-700 flex items-start">
+                          <span className="text-emerald-600 mr-2 mt-0.5">✓</span>
+                          <span>{module}</span>
                         </li>
                       ))}
                     </ul>
@@ -137,9 +126,9 @@ export default function ProgramsPage() {
 
                   <Link
                     href="/contact"
-                    className="block w-full text-center bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition"
+                    className={`block w-full text-center bg-gradient-to-r ${program.gradient} text-white py-3 rounded-xl font-bold hover:shadow-glow transition-all duration-300 transform hover:scale-105`}
                   >
-                    Daftar Sekarang
+                    Daftar Sekarang →
                   </Link>
                 </div>
               </div>
@@ -151,18 +140,33 @@ export default function ProgramsPage() {
       {/* CTA Section */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
+            <span className="text-emerald-700 font-semibold text-sm">💬 Butuh Bantuan?</span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Tidak Yakin Program Mana yang Tepat?
+            Tidak Yakin Program Mana yang <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Tepat?</span>
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Tim kami siap membantu Anda memilih program yang sesuai dengan tujuan karir dan latar belakang Anda.
+            Tim kami siap membantu Anda memilih program yang sesuai dengan tingkat kemampuan dan tujuan pembelajaran Anda. <span className="font-semibold">Konsultasi gratis!</span>
           </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-primary-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-primary-700 transition shadow-lg"
-          >
-            Konsultasi Gratis
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:shadow-glow-lg transition-all duration-300 transform hover:scale-105"
+            >
+              <span>📝</span>
+              <span>Konsultasi Gratis</span>
+            </Link>
+            <a
+              href="https://wa.me/6281234567890?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20program%20kursus%20di%20Karaya"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl text-lg font-bold hover:shadow-lg transition-all duration-300 border-2 border-emerald-200 transform hover:scale-105"
+            >
+              <span>💬</span>
+              <span>Chat WhatsApp</span>
+            </a>
+          </div>
         </div>
       </section>
     </div>
