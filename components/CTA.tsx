@@ -4,7 +4,7 @@ export default function CTA() {
   return (
     <section className="relative py-20 overflow-hidden">
       {/* Animated gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-600 via-blue-600 to-purple-600 bg-300% animate-gradient"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-emerald-600 via-teal-600 to-blue-600 bg-300% animate-gradient"></div>
       
       {/* Overlay pattern */}
       <div className="absolute inset-0 opacity-10">
@@ -22,50 +22,52 @@ export default function CTA() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         <div className="max-w-3xl mx-auto">
           <div className="inline-block mb-4 px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full">
-            <span className="text-white font-semibold text-sm">🎯 Waktunya Beraksi!</span>
+            <span className="text-white font-semibold text-sm">🕌 Yuk, Mulai Sekarang!</span>
           </div>
           
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 leading-tight">
-            Siap Memulai Perjalanan Pembelajaran Anda?
+            Siap Meningkatkan Ilmu Islam Anda?
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Bergabunglah dengan <span className="font-bold">10,000+</span> profesional yang telah mengubah karir mereka bersama Karaya Academy. 
-            Daftar sekarang dan dapatkan akses ke semua program pembelajaran kami.
+            Bergabunglah dengan <span className="font-bold">200+</span> santri yang telah belajar bersama kami. 
+            Daftar sekarang dan dapatkan <span className="font-bold">konsultasi gratis</span> untuk memilih program yang tepat!
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link
-              href="/programs"
-              className="group relative bg-white text-primary-600 px-8 py-4 rounded-xl text-lg font-bold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
+              href="/contact"
+              className="group relative bg-white text-emerald-600 px-8 py-4 rounded-xl text-lg font-bold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
-                🚀 Mulai Belajar Sekarang
+                📝 Daftar Sekarang
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-50 to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-teal-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
             
-            <Link
-              href="/contact"
+            <a
+              href="https://wa.me/6281234567890?text=Assalamu'alaikum,%20saya%20ingin%20bertanya%20tentang%20program%20kursus%20di%20Karaya"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-white/20 transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
             >
-              💬 Hubungi Kami
-            </Link>
+              💬 Chat WhatsApp
+            </a>
           </div>
           
           {/* Trust indicators */}
           <div className="flex flex-wrap items-center justify-center gap-8 text-white/80 text-sm">
             <div className="flex items-center gap-2">
               <span className="text-2xl">✓</span>
-              <span>Tanpa Biaya Tersembunyi</span>
+              <span>Biaya Terjangkau</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">✓</span>
-              <span>Garansi 30 Hari</span>
+              <span>Ustadz Bersertifikat</span>
             </div>
             <div className="flex items-center gap-2">
               <span className="text-2xl">✓</span>
-              <span>Support 24/7</span>
+              <span>Konsultasi Gratis</span>
             </div>
           </div>
         </div>

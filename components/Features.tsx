@@ -1,34 +1,34 @@
-import { FaGraduationCap, FaCertificate, FaUsers, FaChartLine } from 'react-icons/fa'
+import { FaBookOpen, FaUserGraduate, FaUsers, FaAward } from 'react-icons/fa'
 
 export default function Features() {
   const features = [
     {
-      icon: <FaGraduationCap size={40} />,
-      title: 'Kurikulum Berkualitas',
-      description: 'Materi pembelajaran yang dirancang oleh para ahli industri dan selalu diperbarui sesuai tren terkini.',
-      color: 'from-blue-500 to-cyan-500',
+      icon: <FaUserGraduate size={40} />,
+      title: 'Ustadz Berkompeten',
+      description: 'Dibimbing oleh ustadz/ustadzah yang berpengalaman, berkompeten, dan memiliki sanad dalam ilmu yang diajarkan.',
+      color: 'from-emerald-500 to-teal-500',
+      bgColor: 'bg-emerald-50',
+    },
+    {
+      icon: <FaBookOpen size={40} />,
+      title: 'Metode Efektif',
+      description: 'Metode pembelajaran yang mudah dipahami, terstruktur, dan terbukti efektif untuk semua tingkat kemampuan.',
+      color: 'from-blue-500 to-indigo-500',
       bgColor: 'bg-blue-50',
     },
     {
-      icon: <FaCertificate size={40} />,
-      title: 'Sertifikat Profesional',
-      description: 'Dapatkan sertifikat yang diakui industri setelah menyelesaikan setiap program pembelajaran.',
-      color: 'from-purple-500 to-pink-500',
-      bgColor: 'bg-purple-50',
-    },
-    {
       icon: <FaUsers size={40} />,
-      title: 'Belajar Bersama Komunitas',
-      description: 'Bergabung dengan komunitas pembelajar yang aktif dan saling mendukung satu sama lain.',
-      color: 'from-green-500 to-emerald-500',
-      bgColor: 'bg-green-50',
+      title: 'Kelas Interaktif',
+      description: 'Pembelajaran interaktif dengan jumlah santri terbatas agar fokus dan optimal dalam memahami materi.',
+      color: 'from-teal-500 to-cyan-500',
+      bgColor: 'bg-teal-50',
     },
     {
-      icon: <FaChartLine size={40} />,
-      title: 'Tracking Progress',
-      description: 'Pantau perkembangan belajar Anda dengan sistem tracking yang komprehensif dan mudah dipahami.',
-      color: 'from-orange-500 to-red-500',
-      bgColor: 'bg-orange-50',
+      icon: <FaAward size={40} />,
+      title: 'Sertifikat Resmi',
+      description: 'Dapatkan sertifikat resmi setelah menyelesaikan program sebagai bukti penguasaan ilmu yang telah dipelajari.',
+      color: 'from-indigo-500 to-purple-500',
+      bgColor: 'bg-indigo-50',
     },
   ]
 
@@ -36,14 +36,14 @@ export default function Features() {
     <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary-100 rounded-full">
-            <span className="text-primary-700 font-semibold text-sm">✨ Keunggulan Kami</span>
+          <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
+            <span className="text-emerald-700 font-semibold text-sm">✨ Keunggulan Kami</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Mengapa Memilih <span className="gradient-text">Karaya Academy?</span>
+            Mengapa Memilih <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Karaya?</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Kami menyediakan pengalaman pembelajaran terbaik dengan fitur-fitur unggulan yang dirancang untuk kesuksesan Anda.
+            Kami berkomitmen memberikan pembelajaran Islam yang berkualitas dengan pendekatan yang mudah dipahami dan aplikatif.
           </p>
         </div>
 
@@ -62,7 +62,7 @@ export default function Features() {
                 {feature.icon}
               </div>
               
-              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors duration-300">
                 {feature.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>

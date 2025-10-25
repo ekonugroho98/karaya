@@ -3,25 +3,25 @@ import { FaStar } from 'react-icons/fa'
 export default function Testimonials() {
   const testimonials = [
     {
-      name: 'Budi Santoso',
-      role: 'Full Stack Developer',
-      image: '👨‍💻',
+      name: 'Umar bin Abdullah',
+      role: 'Santri Bahasa Arab',
+      image: '👨‍🎓',
       rating: 5,
-      text: 'Karaya Academy mengubah hidup saya! Setelah menyelesaikan program Web Development, saya mendapatkan pekerjaan sebagai Full Stack Developer di perusahaan teknologi ternama.',
+      text: 'Alhamdulillah, setelah 3 bulan belajar di Karaya, saya sudah bisa membaca kitab kuning dengan lebih lancar. Metode yang diajarkan sangat mudah dipahami.',
     },
     {
-      name: 'Siti Nurhaliza',
-      role: 'Data Analyst',
-      image: '👩‍💼',
+      name: 'Fatimah Az-Zahra',
+      role: 'Santri Tahsin',
+      image: '👩‍🎓',
       rating: 5,
-      text: 'Materi pembelajaran sangat lengkap dan instruktur sangat membantu. Program Data Science di Karaya Academy memberikan fondasi yang kuat untuk karir saya.',
+      text: 'Subhanallah, bacaan Al-Qur\'an saya jadi lebih baik. Ustadzah sangat sabar dan detail dalam mengajarkan makhorijul huruf dan tajwid.',
     },
     {
-      name: 'Ahmad Fadli',
-      role: 'UI/UX Designer',
-      image: '👨‍🎨',
+      name: 'Ahmad Fauzan',
+      role: 'Santri Bahasa Arab',
+      image: '👨‍💼',
       rating: 5,
-      text: 'Pengalaman belajar yang luar biasa! Kurikulum yang terstruktur dengan baik dan projek-projek praktis yang sangat membantu dalam membangun portofolio saya.',
+      text: 'Jazakallahu khairan kepada Karaya. Saya yang awalnya tidak bisa sama sekali, sekarang sudah mulai percaya diri berbahasa Arab.',
     },
   ]
 
@@ -29,11 +29,14 @@ export default function Testimonials() {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
+          <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 rounded-full">
+            <span className="text-emerald-700 font-semibold text-sm">💬 Testimoni</span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Apa Kata Mereka?
+            Kata <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Santri</span> Kami
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Dengarkan cerita sukses dari alumni Karaya Academy yang telah mencapai tujuan karir mereka.
+            Dengarkan pengalaman santri yang telah belajar dan merasakan manfaat dari program kami.
           </p>
         </div>
 

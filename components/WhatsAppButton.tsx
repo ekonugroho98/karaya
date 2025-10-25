@@ -4,7 +4,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 export default function WhatsAppButton() {
   const phoneNumber = '6281234567890' // Ganti dengan nomor WhatsApp Anda
-  const message = 'Halo Karaya Academy! Saya ingin bertanya tentang program pembelajaran.'
+  const message = 'Assalamu\'alaikum, saya ingin bertanya tentang program kursus di Karaya'
   
   const handleClick = () => {
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
