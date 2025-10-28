@@ -30,8 +30,6 @@ export default function CTA() {
           </h2>
           
           <p className="text-xl text-white/90 mb-8 leading-relaxed">
-            Bergabunglah dengan <span className="font-bold">200+</span> santri yang telah belajar bersama kami. 
-            <br />
             <span className="font-bold text-2xl">Belajar mudah dari rumah atau di mana saja!</span>
             <br />
             Daftar sekarang dan dapatkan <span className="font-bold">konsultasi gratis</span> untuk memilih program yang tepat!
