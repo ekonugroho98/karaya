@@ -7,26 +7,26 @@ export default function ProgramsPage() {
       icon: <FaBookOpen size={60} />,
       title: 'Les Bahasa Arab',
       description: 'Pelajari bahasa Arab dari dasar hingga mahir dengan metode yang mudah dipahami. Fokus pada nahwu, sharaf, dan percakapan sehari-hari. Belajar mudah dari rumah dengan bimbingan langsung ustadz berpengalaman.',
-      duration: '3-6 Bulan',
-      level: 'Pemula - Menengah',
+      duration: '3 Bulan',
+      level: 'Pemula',
       originalPrice: 'Rp 350.000',
       price: 'Rp 229.000',
       discount: '35%',
-      schedule: '2x Seminggu',
+      schedule: '21 Kali Pertemuan',
       mode: '💻 Online',
       gradient: 'from-emerald-500 to-teal-600',
-      modules: ['Nahwu (Tata Bahasa)', 'Sharaf (Morfologi)', 'Percakapan Sehari-hari', 'Membaca Teks Arab', 'Kosakata Harian', 'Menulis Arab'],
+      modules: ['Nahwu (Tata Bahasa)', 'Sharaf (Morfologi)', 'Percakapan Sehari-hari', 'Bahsa Arab Dasar', 'Kosakata Harian', 'Menulis Arab'],
     },
     {
       icon: <FaQuran size={60} />,
       title: 'Tahsin Al-Quran',
       description: 'Tingkatkan kualitas bacaan Al-Quran Anda dengan bimbingan tahsin yang komprehensif. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Kelas interaktif dengan jumlah santri terbatas.',
-      duration: '2-4 Bulan',
+      duration: '8 Kali Pertemuan',
       level: 'Semua Tingkat',
       originalPrice: 'Rp 300.000',
       price: 'Rp 199.000',
       discount: '34%',
-      schedule: '2x Seminggu',
+      schedule: '21 Kali Pertemuan',
       mode: '💻 Online',
       gradient: 'from-blue-500 to-indigo-600',
       modules: ['Makhorijul Huruf', 'Ahkamul Huruf', 'Tajwid Lengkap', 'Tartil & Mujawwad', 'Gharib & Musykilat', 'Adab Tilawah'],
@@ -120,9 +120,6 @@ export default function ProgramsPage() {
                         <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
                         <div className="flex flex-col items-end">
                           <span className="text-xs text-gray-400 line-through">{program.originalPrice}</span>
-                          <span className={`font-bold text-lg bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent`}>
-                            {program.price}<span className="text-sm">/bulan</span>
-                          </span>
                         </div>
                       </div>
                       <div className="mt-2 text-center">

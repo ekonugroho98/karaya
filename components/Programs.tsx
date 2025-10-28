@@ -133,6 +133,9 @@ export default function Programs() {
                       <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
                       <div className="flex flex-col items-end">
                         <span className="text-xs text-gray-400 line-through">{program.originalPrice}</span>
+                        <span className={`font-bold text-lg bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent`}>
+                          {program.price}
+                        </span>
                       </div>
                     </div>
                     <div className="mt-2 text-center">
