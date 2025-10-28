@@ -8,7 +8,7 @@ export default function Programs() {
       title: 'Les Bahasa Arab',
       description: 'Pelajari bahasa Arab dari dasar hingga mahir. Fokus pada nahwu, sharaf, dan percakapan sehari-hari dengan metode yang mudah dipahami. Kelas online yang bisa diakses dari mana saja!',
       duration: '3 Bulan',
-      level: 'Pemula - Menengah',
+      level: 'Pemula',
       originalPrice: 'Rp 350.000',
       price: 'Rp 229.000',
       discount: '35%',
@@ -23,7 +23,7 @@ export default function Programs() {
     {
       icon: <FaQuran size={50} />,
       title: 'Tahsin Al-Quran',
-      description: 'Tingkatkan bacaan Al-Quran Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Belajar mudah dari rumah dengan bimbingan langsung!',
+      description: 'Tingkatkan bacaan Al-Quran Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Pembelajaran private dengan bimbingan langsung dari rumah!',
       duration: '8 Kali Pertemuan',
       level: 'Semua Tingkat',
       originalPrice: 'Rp 300.000',
@@ -133,9 +133,6 @@ export default function Programs() {
                       <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
                       <div className="flex flex-col items-end">
                         <span className="text-xs text-gray-400 line-through">{program.originalPrice}</span>
-                        <span className={`font-bold text-lg bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent`}>
-                          {program.price}<span className="text-sm">/bulan</span>
-                        </span>
                       </div>
                     </div>
                     <div className="mt-2 text-center">
