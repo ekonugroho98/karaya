@@ -24,12 +24,12 @@ export default function Programs() {
       icon: <FaQuran size={50} />,
       title: 'Tahsin Al-Quran',
       description: 'Tingkatkan bacaan Al-Quran Anda dengan bimbingan tahsin. Belajar tajwid, makhorijul huruf, dan tartil yang benar sesuai kaidah. Pembelajaran private dengan bimbingan langsung dari rumah!',
-      duration: '8 Kali Pertemuan',
+      duration: '2 Bulan',
       level: 'Semua Tingkat',
       originalPrice: 'Rp 300.000',
       price: 'Rp 199.000',
       discount: '34%',
-      schedule: '21 Kali Pertemuan',
+      schedule: '8 Kali Pertemuan',
       mode: '💻 Online',
       gradient: 'from-blue-500 via-indigo-500 to-purple-600',
       bgGradient: 'from-blue-50 to-indigo-50',
@@ -121,7 +121,7 @@ export default function Programs() {
                   </div>
                   <div className="flex items-center justify-between p-3 bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl border border-purple-100">
                     <span className="text-gray-600 text-sm font-medium">⏰ Sesi:</span>
-                    <span className="font-bold text-gray-900 text-sm">2 Jam/Pertemuan</span>
+                    <span className="font-bold text-gray-900 text-sm">90 Menit/Pertemuan</span>
                   </div>
                   <div className="flex items-center justify-between p-3 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-100">
                     <span className="text-gray-600 text-sm font-medium">📊 Level:</span>
