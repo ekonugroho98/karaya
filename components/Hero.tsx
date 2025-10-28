@@ -57,7 +57,7 @@ export default function Hero() {
           </div>
 
           {/* Right Content - Modern Stats Cards */}
-          <div className="grid grid-cols-2 gap-6 animate-slide-up" style={{animationDelay: '0.2s'}}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 animate-slide-up" style={{animationDelay: '0.2s'}}>
             <div className="group relative bg-gradient-to-br from-white to-blue-50 p-8 rounded-2xl shadow-lg hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border border-blue-100">
               <div className="absolute top-4 right-4 text-4xl opacity-20">💻</div>
               <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-2">100%</div>
