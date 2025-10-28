@@ -54,7 +54,7 @@ export default function Programs() {
             Program <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Unggulan</span> Kami
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Mulai perjalanan pembelajaran bahasa arab dan tahsin anda dengan program yang berkualitas.
+            Mulai perjalanan pembelajaran bahasa arab dan tahsin anda dengan program yang berkualitas yang dibimbing oleh ustadz/ustadzah berpengalaman.
           </p>
         </div>
 
