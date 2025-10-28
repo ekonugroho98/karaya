@@ -1,7 +1,7 @@
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
 import Programs from '@/components/Programs'
-import Testimonials from '@/components/Testimonials'
+// import Testimonials from '@/components/Testimonials'
 import CTA from '@/components/CTA'
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <Features />
       <Programs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <CTA />
     </>
   )
