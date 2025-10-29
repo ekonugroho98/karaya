@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
 export default function Navbar() {
@@ -25,8 +26,15 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300 inline-block">
-              Karaya Academy
+            <Link href="/" className="hover:scale-105 transition-transform duration-300 inline-block">
+              <Image 
+                src="/image/logo.png" 
+                alt="Karaya Academy" 
+                width={180} 
+                height={60}
+                priority
+                className="h-10 w-auto"
+              />
             </Link>
           </div>
           
