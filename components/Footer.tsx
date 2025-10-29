@@ -13,9 +13,9 @@ export default function Footer() {
               <Image 
                 src="/image/logo.png" 
                 alt="Karaya Academy" 
-                width={200} 
-                height={70}
-                className="h-12 w-auto"
+                width={180} 
+                height={69}
+                className="h-12 w-auto brightness-0 invert"
               />
             </div>
             <p className="text-gray-400 mb-4">

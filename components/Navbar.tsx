@@ -30,8 +30,8 @@ export default function Navbar() {
               <Image 
                 src="/image/logo.png" 
                 alt="Karaya Academy" 
-                width={180} 
-                height={60}
+                width={150} 
+                height={57}
                 priority
                 className="h-10 w-auto"
               />
