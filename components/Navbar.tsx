@@ -53,9 +53,9 @@ export default function Navbar() {
               <Link href="/contact" className="text-gray-700 hover:text-primary-600 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover:bg-primary-50">
                 Kontak
               </Link>
-              <Link href="/login" className="ml-4 bg-gradient-to-r from-primary-600 to-blue-600 text-white px-6 py-2 rounded-lg text-sm font-semibold hover:shadow-glow transition-all duration-300 transform hover:scale-105">
+              {/* <Link href="/login" className="ml-4 bg-gradient-to-r from-primary-600 to-blue-600 text-white px-6 py-2 rounded-lg text-sm font-semibold hover:shadow-glow transition-all duration-300 transform hover:scale-105">
                 Masuk
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -140,15 +140,15 @@ export default function Navbar() {
                   {/* Divider */}
                   <div className="my-4 border-t border-gray-200"></div>
                   
-                  {/* Login Button */}
-                  <Link 
+                  {/* Login Button - Hidden */}
+                  {/* <Link 
                     href="/login" 
                     onClick={() => setIsOpen(false)}
                     className="flex items-center justify-center gap-2 px-4 py-3 bg-gradient-to-r from-primary-600 to-blue-600 text-white rounded-xl font-semibold hover:shadow-glow transition-all duration-300 transform hover:scale-105"
                   >
                     <span>🔐</span>
                     <span>Masuk</span>
-                  </Link>
+                  </Link> */}
                 </nav>
                 
                 {/* Quick Actions */}

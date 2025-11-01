@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { FaBookOpen, FaQuran } from 'react-icons/fa'
 
 export default function Programs() {
@@ -147,12 +146,14 @@ export default function Programs() {
                 </div>
 
                 {/* CTA Button with gradient */}
-                <Link
-                  href="/contact"
+                <a
+                  href={`https://wa.me/6285761123043?text=${encodeURIComponent(`Assalamualaikum, saya ingin mendaftar program ${program.title} di Karaya`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`block w-full text-center bg-gradient-to-r ${program.gradient} text-white py-3 rounded-xl font-bold hover:shadow-glow transition-all duration-300 transform hover:scale-105`}
                 >
                   Daftar Sekarang →
-                </Link>
+                </a>
               </div>
               
               {/* Bottom decoration line */}
@@ -165,13 +166,15 @@ export default function Programs() {
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             Ingin konsultasi terlebih dahulu? Hubungi kami untuk informasi lebih lanjut tentang program yang sesuai dengan kebutuhan Anda.
           </p>
-          <Link
-            href="/contact"
+          <a
+            href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20konsultasi%20tentang%20program%20kursus%20di%20Karaya"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-10 py-4 rounded-xl text-lg font-bold hover:shadow-glow-lg transition-all duration-300 transform hover:scale-105"
           >
             <span>💬 Hubungi Kami</span>
             <span className="transform group-hover:translate-x-2 transition-transform duration-300">→</span>
-          </Link>
+          </a>
         </div>
       </div>
     </section>

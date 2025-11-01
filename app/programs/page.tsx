@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import { FaBookOpen, FaQuran } from 'react-icons/fa'
 
 export default function ProgramsPage() {
@@ -146,12 +145,14 @@ export default function ProgramsPage() {
                     </ul>
                   </div>
 
-                  <Link
-                    href="/contact"
+                  <a
+                    href={`https://wa.me/6285761123043?text=${encodeURIComponent(`Assalamualaikum, saya ingin mendaftar program ${program.title} di Karaya`)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`block w-full text-center bg-gradient-to-r ${program.gradient} text-white py-3 rounded-xl font-bold hover:shadow-glow transition-all duration-300 transform hover:scale-105`}
                   >
                     Daftar Sekarang →
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}
@@ -172,21 +173,23 @@ export default function ProgramsPage() {
             Tim kami siap membantu Anda memilih program yang sesuai dengan tingkat kemampuan dan tujuan pembelajaran Anda. <span className="font-semibold">Konsultasi gratis!</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/contact"
+            <a
+              href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20konsultasi%20tentang%20program%20kursus%20di%20Karaya"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-8 py-4 rounded-xl text-lg font-bold hover:shadow-glow-lg transition-all duration-300 transform hover:scale-105"
             >
               <span>📝</span>
               <span>Konsultasi Gratis</span>
-            </Link>
+            </a>
             <a
-              href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20bertanya%20tentang%20program%20kursus%20di%20Karaya"
+              href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20mendaftar%20program%20kursus%20di%20Karaya"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-xl text-lg font-bold hover:shadow-lg transition-all duration-300 border-2 border-emerald-200 transform hover:scale-105"
             >
               <span>💬</span>
-              <span>Chat WhatsApp</span>
+              <span>Daftar Sekarang</span>
             </a>
           </div>
         </div>

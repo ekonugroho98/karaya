@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function CTA() {
   return (
     <section className="relative py-20 overflow-hidden">
@@ -36,23 +34,25 @@ export default function CTA() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Link
-              href="/contact"
+            <a
+              href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20mendaftar%20program%20kursus%20di%20Karaya"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative bg-white text-emerald-600 px-8 py-4 rounded-xl text-lg font-bold hover:shadow-2xl transition-all duration-300 transform hover:scale-105 overflow-hidden"
             >
               <span className="relative z-10 flex items-center justify-center gap-2">
                 📝 Daftar Sekarang
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-50 to-teal-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </Link>
+            </a>
             
             <a
-              href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20bertanya%20tentang%20program%20kursus%20di%20Karaya"
+              href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20konsultasi%20tentang%20program%20kursus%20di%20Karaya"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white/10 backdrop-blur-sm text-white px-8 py-4 rounded-xl text-lg font-bold hover:bg-white/20 transition-all duration-300 transform hover:scale-105 border-2 border-white/30"
             >
-              💬 Chat WhatsApp
+              💬 Konsultasi Gratis
             </a>
           </div>
           

@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 export default function Hero() {
   return (
     <section className="relative pt-20 pb-16 overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-blue-50">
@@ -24,19 +22,23 @@ export default function Hero() {
               Tingkatkan pemahaman Islam Anda melalui pembelajaran bahasa Arab dan perbaikan bacaan Al-Quran dengan bimbingan <span className="font-semibold text-emerald-600">ustadz/ustadzah</span> yang berpengalaman dan berkompeten. <span className="font-bold text-blue-600">Belajar dari rumah, kapan pun, di mana pun!</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link
-                href="/contact"
+              <a
+                href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20mendaftar%20program%20kursus%20di%20Karaya"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative bg-gradient-to-r from-emerald-600 to-teal-600 text-white px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-glow-lg transition-all duration-300 transform hover:scale-105"
               >
                 <span className="relative z-10">📝 Daftar Sekarang</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-700 to-teal-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </Link>
-              <Link
-                href="/about"
+              </a>
+              <a
+                href="https://wa.me/6285761123043?text=Assalamualaikum,%20saya%20ingin%20konsultasi%20tentang%20program%20kursus%20di%20Karaya"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="glass-effect text-emerald-700 px-8 py-4 rounded-xl text-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105 border border-emerald-200"
               >
                 💬 Konsultasi Gratis
-              </Link>
+              </a>
             </div>
             
             {/* Trust Badges */}
