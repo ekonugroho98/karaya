@@ -149,30 +149,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      {/* Stats */}
-      <section className="py-16 bg-primary-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-5xl font-bold text-white mb-2">10K+</div>
-              <div className="text-primary-100">Siswa Aktif</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-white mb-2">50+</div>
-              <div className="text-primary-100">Program Kursus</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-white mb-2">100+</div>
-              <div className="text-primary-100">Instruktur Expert</div>
-            </div>
-            <div>
-              <div className="text-5xl font-bold text-white mb-2">95%</div>
-              <div className="text-primary-100">Tingkat Kepuasan</div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
