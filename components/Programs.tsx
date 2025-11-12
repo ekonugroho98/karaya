@@ -1,4 +1,4 @@
-import { FaBookOpen, FaQuran } from 'react-icons/fa'
+import { FaBookOpen, FaQuran, FaGraduationCap, FaBook } from 'react-icons/fa'
 
 export default function Programs() {
   const programs = [
@@ -36,6 +36,40 @@ export default function Programs() {
       badge: '⭐ Pilihan Utama',
       features: ['Makhorijul Huruf', 'Tajwid', 'Tartil', 'Tilawah'],
     },
+    {
+      icon: <FaBook size={50} />,
+      title: 'Nahwu',
+      description: 'Pelajari tata bahasa Arab (Nahwu) secara mendalam. Program per satuan mata pelajaran yang fokus dan intensif untuk menguasai dasar-dasar ilmu nahwu dengan metode yang mudah dipahami.',
+      duration: 'Per Satuan',
+      level: 'Pemula - Menengah',
+      originalPrice: null,
+      price: 'Rp 29.900',
+      discount: null,
+      schedule: 'Fleksibel',
+      mode: '💻 Online',
+      gradient: 'from-amber-500 via-orange-500 to-yellow-600',
+      bgGradient: 'from-amber-50 to-orange-50',
+      iconBg: 'bg-gradient-to-br from-amber-500 to-orange-500',
+      badge: '📚 Per Satuan',
+      features: ['Nahwu Dasar', 'Pemahaman Kaidah', 'Latihan Praktis', 'Contoh Penerapan'],
+    },
+    {
+      icon: <FaGraduationCap size={50} />,
+      title: 'Sharaf',
+      description: 'Pelajari morfologi Arab (Sharaf) secara mendalam. Program per satuan mata pelajaran yang fokus dan intensif untuk menguasai dasar-dasar ilmu sharaf dengan metode yang mudah dipahami.',
+      duration: 'Per Satuan',
+      level: 'Pemula - Menengah',
+      originalPrice: null,
+      price: 'Rp 29.900',
+      discount: null,
+      schedule: 'Fleksibel',
+      mode: '💻 Online',
+      gradient: 'from-amber-500 via-orange-500 to-yellow-600',
+      bgGradient: 'from-amber-50 to-orange-50',
+      iconBg: 'bg-gradient-to-br from-amber-500 to-orange-500',
+      badge: '📚 Per Satuan',
+      features: ['Sharaf Dasar', 'Pemahaman Kaidah', 'Latihan Praktis', 'Contoh Penerapan'],
+    },
   ]
 
   return (
@@ -57,7 +91,7 @@ export default function Programs() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-12">
           {programs.map((program, index) => (
             <div
               key={index}
@@ -73,9 +107,11 @@ export default function Programs() {
                   {program.badge}
                 </span>
                 {/* Discount Badge */}
-                <span className="inline-block px-3 py-1.5 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-full text-xs font-bold shadow-lg animate-pulse">
-                  🔥 Diskon {program.discount}
-                </span>
+                {program.discount && (
+                  <span className="inline-block px-3 py-1.5 bg-gradient-to-r from-red-500 to-pink-500 text-white rounded-full text-xs font-bold shadow-lg animate-pulse">
+                    🔥 Diskon {program.discount}
+                  </span>
+                )}
               </div>
               
               <div className="p-8 relative z-10">
@@ -131,17 +167,21 @@ export default function Programs() {
                     <div className="flex items-center justify-between mb-1">
                       <span className="text-gray-600 text-sm font-medium">💰 Investasi:</span>
                       <div className="flex flex-col items-end">
-                        <span className="text-xs text-gray-400 line-through">{program.originalPrice}</span>
+                        {program.originalPrice && (
+                          <span className="text-xs text-gray-400 line-through">{program.originalPrice}</span>
+                        )}
                         <span className={`font-bold text-lg bg-gradient-to-r ${program.gradient} bg-clip-text text-transparent`}>
                           {program.price}
                         </span>
                       </div>
                     </div>
-                    <div className="mt-2 text-center">
-                      <span className="inline-block px-2 py-1 bg-red-500 text-white text-xs font-bold rounded">
-                        HEMAT {program.discount} 🎉
-                      </span>
-                    </div>
+                    {program.discount && (
+                      <div className="mt-2 text-center">
+                        <span className="inline-block px-2 py-1 bg-red-500 text-white text-xs font-bold rounded">
+                          HEMAT {program.discount} 🎉
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </div>
 
