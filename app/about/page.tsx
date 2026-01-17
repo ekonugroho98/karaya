@@ -44,6 +44,12 @@ export default function AboutPage() {
       image: '/image/guru-3.png',
       bio: 'Mahasiswa semester akhir jurusan Ulumul Quran wa Tafsir di Jami\'atul Ulum, Hadramaut, Yaman, dan juga pelajar di Ma\'had Falah, Mukalla. Berpengalaman mengajar Tahfidz di Yayasan Talaumau Tahfidz Centre dan Yayasan Imam Al Ghazali, serta mengajar di sebuah Ma\'had di Yaman.',
     },
+    {
+      name: 'Ustadz Ali Munawar',
+      role: 'Pengajar Tahfiz',
+      image: '/image/guru-4.png',
+      bio: 'Berpengalaman sebagai Muhafizh di berbagai pondok pesantren sejak tahun 2017, termasuk Ma\'had Aly Ahlul Qur\'an Al Islamy Kendal, Pondok Pesantren Tahfizhul Qur\'an Griya Qur\'an, Ma\'had Aly Ahlul Qur\'an Klaten, dan saat ini aktif di Pondok Pesantren Tahfizhul Qur\'an Nailul Majdi Banyumas. Memiliki latar belakang pendidikan non formal di Rumah Tahfizh Nurul Ummah, Pondok Pesantren Islam Darusy Syahadah, dan Daurah Al-Quran di Semarang.',
+    },
   ]
 
   return (
