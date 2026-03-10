@@ -52,7 +52,7 @@ export default function ProgramsPage() {
       level: 'Pemula',
       originalPrice: 'Rp 350.000',
       price: 'Rp 299.000',
-      discount: '35%',
+      discount: '15%',
       schedule: '8 Kali Pertemuan',
       mode: '💻 Online',
       gradient: 'from-emerald-500 to-teal-600',
