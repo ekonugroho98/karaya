@@ -51,7 +51,7 @@ export default function ProgramsPage() {
       duration: '1 Bulan',
       level: 'Pemula',
       originalPrice: 'Rp 350.000',
-      price: 'Rp 229.000',
+      price: 'Rp 299.000',
       discount: '35%',
       schedule: '8 Kali Pertemuan',
       mode: '💻 Online',
